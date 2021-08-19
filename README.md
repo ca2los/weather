@@ -1,8 +1,8 @@
-# [WEATHER DASHBOARD](https://github.com/ca2los/)
+# [WEATHER DASHBOARD](https://ca2los.github.io/weather/)
 A project based on Javascript, HTML 5, CSS and free APIs to demonstrate how to obtain data and print the values 
 for each array element when the program is executed. 
 
-#### [TRY IT HERE!](https://github.com/ca2los/) *Version 1.0*
+#### [TRY IT HERE!](https://ca2los.github.io/weather/) *Version 1.0*
 
 ### This webtool also makes use of TWO APIs:
 
@@ -11,9 +11,10 @@ for each array element when the program is executed.
 
 ### How does it work?
 1. When the page has loaded, the MAIN tag at the HTML will be empty, but once the program loads by the click listener of the search
-button, then new tags will be created. [Take a look at the HTML](https://github.com/ca2los/)
+button, then new tags will be created. [Take a look at the HTML](https://github.com/ca2los/weather/blob/main/index.html)
 2. In the Javascript file, the first API to load information is Rest Countries API. This service retrieves additional data like the
 multiple versions of the country's name. This is how the program searches the country and then retrieves information for the weather.
+[Take a look at the JS](https://github.com/ca2los/weather/blob/main/js/script.js)
 3. Now that we have the name, Open Weather API loads the weather conditions for the chosen country.
 4. Finally, the Javascript creates the HTML tags to print the data.
 
@@ -40,7 +41,6 @@ updated by minute, so everytime you search, the program shows updated info about
    * Forget about Capital letters, the APP will do it for you
 2. Press ENTER key or CLICK the search button
 3. GET the data you are looking for
-* Item 3
 
 ### It's more than a weather APP!
 If you are looking for the weather, then you must be also interested in some other facts. Every result will show additional data 
