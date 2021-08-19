@@ -1,0 +1,477 @@
+:root {
+    --bg_main: #f3f4ff;
+    --radius: 10px;
+    --green: #38FFAC;
+    --white: #fff;
+    --yellow: #FADC00;
+    --pink: #B05ED5;
+    --neon_01: #B3ADE6;
+    --neon_02: #9B94D6;
+    --roboto: 'Roboto Slab', monospace, serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,strong,a{
+    font-family: var(--roboto);
+    font-size: 100%;
+}
+
+p,ol,ul,li,span,section,div,form {
+    font-family: var(--montserrat);
+    font-size: 100%;
+}
+
+button, img {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+body {
+    background: var(--bg_main);
+    color: #000;
+    margin: 0 auto;
+    padding: 0;
+
+    header {
+        width: 96%;
+        height: 50px;
+        background: #161c21;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 2% 0;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        ul {
+            align-items: center;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin: 0 6px 0 0;
+                p {
+                    color: #ffffff;
+                    font-family: "Roboto Mono", serif;
+                    font-size: 18px;
+                    margin: 0;
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                    }
+                }
+                button {
+                    color: #435661;
+                    cursor: pointer;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 0.2px;
+                    margin: 3px 0 0;
+                    padding: 4px 6px;
+                    text-transform: uppercase;
+                }
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 90%;
+        min-height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+        form {
+            width: 100%;
+            max-width: 680px;
+            background: var(--white);
+            border-radius: var(--radius);
+            margin: 30px auto 0;
+            padding: 40px 0;
+            text-align: center;
+            -webkit-box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+            label {
+                width: 90%;
+                color: #4e4cb9;
+                font-family: var(--montserrat);
+                font-size: 1.4em;
+                letter-spacing: 1px;
+                & span {
+                    color: #52517b;
+                    font-size: .8em;
+                    text-transform: none;
+                }
+            }
+            input {
+                &#name {
+                    width: 80%;
+                    height: 60px;
+                    border: 1px dashed #a9a9a9;
+                    border-radius: var(--radius);
+                    font-family: var(--montserrat);
+                    font-size: 1.6em;
+                    margin: 30px auto 20px;
+                    padding: 12px 5% 10px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    &::placeholder {
+                        color: #dcdcdc;
+                        font-family: var(--montserrat);
+                        font-size: 1.3em;
+                    }
+                }
+                &#submit {
+                    width: 90%;
+                    background: #546fff;
+                    border: 0;
+                    border-radius: var(--radius);
+                    color: var(--white);
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    padding: 16px;
+                }
+            }
+        }
+        #wrapper {
+            margin: 60px auto;
+            .container {
+                section {
+                    width: 80%;
+                    max-width: 680px;
+                    background: var(--white);
+                    border-radius: var(--radius);
+                    margin: 0 auto 30px;
+                    padding: 22px 0 40px;
+                    text-align: center;
+                    -webkit-box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+                    -moz-box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+                    box-shadow: 0 10px 30px -10px rgba(0,0,0,.2);
+                    &.flag {
+                        background: none;
+                        -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+                        -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+                        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+                        margin: 0 auto 20px;
+                        padding: 0;
+                        img {
+                            width: 100%;
+                            max-width: 260px;
+                            margin: 0 auto 20px;
+                        }
+                        .country_hour{
+                            margin: 0 auto 40px;
+                            padding: 0;
+                        }
+                    }
+                    &.country {
+                        .country_name{
+                            width: 80%;
+                            font-size: 2em;
+                            margin: 0 auto;
+                            padding: 0 0 4px;
+                        }
+                        .country_capital{
+                            border-bottom: 1px solid #cbcae0;
+                            color: #5855cb;
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 20px;
+                            padding: 0 0 20px;
+                            text-transform: uppercase;
+                        }
+                        .country_name_translation{
+                            font-size: 1em;
+                            margin: 12px 0 0;
+                            color: #5c5acc;
+                        }
+                        .country_name_spellings{
+                            width: 300px;
+                            color: #615fcd;
+                            font-size: 1em;
+                            line-height: 1.6;
+                            margin: 12px auto 16px;
+                            word-break: break-word;
+                        }
+                        .country_demonym{
+                            width: 80%;
+                            background: #556ffe;
+                            border-radius: var(--radius);
+                            color: #fff;
+                            font-size: 1em;
+                            letter-spacing: 1px;
+                            margin: 20px auto 0;
+                            padding: 10px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &.geography {
+                        .country_region{
+                            width: 80%;
+                            font-size: 2em;
+                            margin: 0 auto;
+                            padding: 0 0 4px;
+                        }
+                        .country_subregion{
+                            border-bottom: 1px solid #cbcae0;
+                            color: #5855cb;
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 20px;
+                            padding: 0 0 20px;
+                            text-transform: uppercase;
+                        }
+                        .country_population{
+                            width: 165px;
+                            text-align: center;
+                            font-family: var(--montserrat);
+                            color: #2344ff;
+                            font-size: 1.4em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 4px;
+                            text-transform: uppercase;
+                            word-break: break-word;
+                        }
+                        .country_timezones{
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 10px;
+                            text-transform: uppercase;
+                        }
+                        .country_sunrise{
+                            font-size: 1em;
+                            margin: 12px 0 0;
+                            color: #5c5acc;
+                        }
+                        .country_sunset{
+                            font-size: 1em;
+                            margin: 12px 0 0;
+                            color: #5c5acc;
+                        }
+                        .country_borders{
+                            width: 90%;
+                            background: #f3f4ff;
+                            border-top: 1px solid #cbc9e0;
+                            border-bottom: 1px solid #cbc9e0;
+                            color: #4e5157;
+                            margin: 20px 0 0;
+                            padding: 20px 5%;
+                            font-style: italic;
+                            word-break: break-word;
+                        }
+                    }
+                    &.specifics {
+                        background: #aeb5ff;
+                        padding: 22px 0 32px;
+                        .country_currencies{
+                            width: 80%;
+                            color: var(--white);
+                            font-size: 2em;
+                            margin: 0 auto;
+                            padding: 0 0 4px;
+                        }
+                        .country_languages{
+                            color: #4f5158;
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &#weather {
+                        .country_main{
+                            width: 80%;
+                            font-size: 2em;
+                            margin: 0 auto;
+                            padding: 0 0 4px;
+                        }
+                        .country_description{
+                            border-bottom: 1px solid #cbcae0;
+                            color: #5855cb;
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 20px;
+                            padding: 0 0 20px;
+                            text-transform: uppercase;
+                        }
+                        .country_temperature{
+                            color: #2344ff;
+                            font-size: 1.4em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 4px;
+                            text-transform: uppercase;
+                        }
+                        .country_feels{
+                            font-size: .8em;
+                            letter-spacing: 1px;
+                            margin: 0 auto 10px;
+                            text-transform: uppercase;
+                        }
+                        .country_humidity{
+                            font-size: 1em;
+                            margin: 12px 0 0;
+                            color: #5c5acc;
+                        }
+                        .country_windspeed{
+                            font-size: 1em;
+                            margin: 12px 0 0;
+                            color: #5c5acc;
+                        }
+                        .country_uvi{
+                            width: 110px;
+                            background: #556ffe;
+                            border-radius: var(--radius);
+                            color: #fff;
+                            font-size: 1em;
+                            letter-spacing: 1px;
+                            margin: 20px auto 0;
+                            padding: 10px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        max-width: none;
+        background: #080311;
+        padding: 60px 0;
+        .container {
+            max-width: 440px;
+            background: #161d21;
+            border: 1px solid #312f35;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0 0 26px;
+            .columns {
+                flex: 1;
+                &:nth-child(1) {
+                    flex: 1.5;
+                }
+                &:nth-child(2) {
+                    flex: 2;
+                }
+                img {
+                    width: 100%;
+                    max-width: 110px;
+                    border-radius: 200px;
+                    display: block;
+                    margin: 20px auto 0;
+                }
+                h1 {
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    font-size: 1.5rem;
+                    margin: 20px 0 0;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+                button {
+                    color: #435661;
+                    cursor: pointer;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    font-weight: 400;
+                    letter-spacing: .2px;
+                    margin: 12px 0 0;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-family: "Roboto Mono", serif;
+                    font-size: .8rem;
+                    margin: 10px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    body {
+        padding: 0 0 30px;
+        main {
+            padding: 30px 0 0;
+            form {
+                border-radius: 0;
+                label {
+                    & span {}
+                }
+                input {
+                    &#name {
+                        &::placeholder {}
+                    }
+                    &#submit {}
+                }
+            }
+            #wrapper {
+                .container {
+                    section {
+                        width: 90%;
+                        &.flag {
+                            .country_flag{}
+                            .country_hour{}
+                        }
+                        &.country {
+                            .country_name{}
+                            .country_capital{}
+                            .country_name_translation{}
+                            .country_name_spellings{}
+                            .country_demonym{}
+                        }
+                        &.geography {
+                            .country_region{}
+                            .country_subregion{}
+                            .country_population{}
+                            .country_timezones{}
+                            .country_sunrise{}
+                            .country_sunset{}
+                            .country_borders{}
+                        }
+                        &.specifics {
+                            .country_currencies{}
+                            .country_languages{}
+                        }
+                        &.weather {
+                            .country_main{}
+                            .country_description{}
+                            .country_temperature{}
+                            .country_feels{}
+                            .country_humidity{}
+                            .country_windspeed{}
+                            .country_uvi{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        footer {
+            .container {
+                width: 80%;
+                max-width: none;
+                .columns {
+                    img {
+                        max-width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
