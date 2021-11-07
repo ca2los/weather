@@ -56,6 +56,4 @@ related to the country to document the most important facts about the place you 
 - [x] Currencies and frontiers
 
 ### It's Mobile first!
-The website prioritize mobile displays, so give it a try in your mobile phone. 
-
-:octocat:
+The website prioritize mobile displays, so give it a try in your mobile phone.
